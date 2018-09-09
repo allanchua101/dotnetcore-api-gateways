@@ -1,0 +1,81 @@
+﻿{
+  "ReRoutes": [
+    // Authentication Routes
+    {
+      "DownstreamPathTemplate": "/api/user/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52792
+        }
+      ],
+      "UpstreamPathTemplate": "/api/user/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/getbyid/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52792
+        }
+      ],
+      "UpstreamPathTemplate": "/api/user/getbyid/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "user-profile"
+    },
+    // Catalog Routes
+    {
+      "DownstreamPathTemplate": "/api/product/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52791
+        }
+      ],
+      "UpstreamPathTemplate": "/api/product/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // Transaction Routess
+    {
+      "DownstreamPathTemplate": "/api/transaction/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52790
+        }
+      ],
+      "UpstreamPathTemplate": "/api/transaction/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/transaction/getbyuserid/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52790
+        }
+      ],
+      "UpstreamPathTemplate": "/api/transaction/getbyuserid/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "user-transactions"
+    }
+  ],
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "user-transactions",
+        "user-profile"
+      ],
+      "UpstreamPathTemplate": "/api/user-transactions/{id}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:52793"
+  }
+}
