@@ -1,10 +1,7 @@
-# Ocelot API Gateway Demo
-This repository intends to showcase simple and robust API gateway development using Ocelot and Asp.net Core
+# Basic API Gateway Setup
 
-## Pre-requisites
+This folder contains a sample app (Final folder) and Scripts used for generating API Gateway + Downstream APIs using automated scripts.
 
-You would need the following to be able to reproduce the demo:  
+## Running the scripts to replicate your application.
 
-- Visual Studio 2017
-- Docker
-- Any web browser
+TODO
