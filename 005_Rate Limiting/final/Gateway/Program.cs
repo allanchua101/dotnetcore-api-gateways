@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Ocelot.Middleware;
 using Ocelot.DependencyInjection;
+using Microsoft.AspNetCore.Builder;
 
 namespace Gateway
 {
@@ -28,6 +29,7 @@ namespace Gateway
                           })
                           .Configure(app =>
                           {
+                              app.UseStaticFiles();
                               app.UseOcelot().Wait();
                           })
                           .ConfigureLogging((hostingContext, logging) =>

@@ -83,6 +83,12 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:52793"
+    "BaseUrl": "http://localhost:52793",
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": false,
+      "QuotaExceededMessage": "Customize Tips!",
+      "HttpStatusCode": 999,
+      "ClientIdHeader": "Test"
+    }
   }
 }

@@ -34,7 +34,12 @@ namespace Gateway
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDefaultFiles(new DefaultFilesOptions
+            {
+                DefaultFileNames = new List<string> { "index.html" }
+            });
             app.UseMvc();
+            app.UseStaticFiles();
         }
     }
 }
