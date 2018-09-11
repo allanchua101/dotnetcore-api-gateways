@@ -86,7 +86,7 @@
     "BaseUrl": "http://localhost:52793",
     "RateLimitOptions": {
       "DisableRateLimitHeaders": false,
-      "QuotaExceededMessage": "Customize Tips!",
+      "QuotaExceededMessage": "Customize Gateway Rate Limiting Issue!",
       "HttpStatusCode": 999,
       "ClientIdHeader": "Test"
     }
