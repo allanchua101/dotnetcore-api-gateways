@@ -19,7 +19,12 @@ namespace Ledger
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+                    .UseKestrel(options =>
+                    {
+                        // Set properties and call methods on options
+                    })
+                    .UseUrls("http://0.0.0.0:80")
+                    .UseStartup<Startup>()
+                    .Build();
     }
 }

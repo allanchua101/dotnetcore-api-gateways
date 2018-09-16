@@ -10,6 +10,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog", "Catalog\Catalog.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{F667A58D-01AD-418B-9C38-1A16F11543DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE40C761-7B8F-40E9-A4F3-FE7DFB31BF0D}"
+	ProjectSection(SolutionItems) = preProject
+		0001_Containerize Services.sh = 0001_Containerize Services.sh
+		0002_Run Docker Images.sh = 0002_Run Docker Images.sh
+		0003_Clean Containers.sh = 0003_Clean Containers.sh
+		0004_Clean Images.txt = 0004_Clean Images.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
