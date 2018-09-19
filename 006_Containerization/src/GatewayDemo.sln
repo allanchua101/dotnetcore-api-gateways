@@ -15,7 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		0001_Containerize Services.sh = 0001_Containerize Services.sh
 		0002_Run Docker Images.sh = 0002_Run Docker Images.sh
 		0003_Clean Containers.sh = 0003_Clean Containers.sh
-		0004_Clean Images.txt = 0004_Clean Images.txt
 	EndProjectSection
 EndProject
 Global

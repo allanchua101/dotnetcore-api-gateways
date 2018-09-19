@@ -86,7 +86,7 @@
     "BaseUrl": "http://demo.api.gateway:52793",
     "RateLimitOptions": {
       "DisableRateLimitHeaders": false,
-      "QuotaExceededMessage": "Customize Gateway Rate Limiting Issue!",
+      "QuotaExceededMessage": "Customized Gateway Rate Limiting Issue!",
       "HttpStatusCode": 999,
       "ClientIdHeader": "Test"
     }
