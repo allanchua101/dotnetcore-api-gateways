@@ -47,4 +47,4 @@ docker image prune
 
 ## Support
 
-If you experience some troubles with the containerization process, feel free to hit me up with comments at my (blog post)[http://www.pogsdotnet.com/2018/09/containerizing-api-gateways-using.html]
+If you experience some troubles with the containerization process, feel free to hit me up with comments at my [blog post](http://www.pogsdotnet.com/2018/09/containerizing-api-gateways-using.html)
