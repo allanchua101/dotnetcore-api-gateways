@@ -1,6 +1,6 @@
 # Containerizing API Gateways using Alpine Images
 
-This repository is a companion guide for the this (blog post)[http://www.pogsdotnet.com/2018/09/containerizing-api-gateways-using.html]
+This repository is a companion guide for the this [blog post](http://www.pogsdotnet.com/2018/09/containerizing-api-gateways-using.html)
 
 ## Building the Container Images
 
